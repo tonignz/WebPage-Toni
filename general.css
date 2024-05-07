@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.general-information{
+  display: flex;
+}
+
+#info-column{
+  overflow-y: auto; /* Agrega desplazamiento vertical solo cuando el contenido excede la altura */
+  max-height: 93.5vh;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+}
