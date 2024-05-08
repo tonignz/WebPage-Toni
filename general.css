@@ -9,7 +9,7 @@ body {
 
 #info-column{
   overflow-y: auto; /* Agrega desplazamiento vertical solo cuando el contenido excede la altura */
-  max-height: 90vh;
+  max-height: 87vh;
 }
 
 footer {
