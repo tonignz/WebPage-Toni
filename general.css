@@ -12,7 +12,12 @@ body {
   max-height: 87vh;
 }
 
+h2{
+  border-bottom: 1px solid;
+  border-color:#363dff;
+}
+
 footer {
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #363dffa4;
 }
