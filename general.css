@@ -7,6 +7,29 @@ body {
   display: flex;
 }
 
+#menu-column{
+  background-color: #dadbff;
+}
+
+#content-list{
+  list-style-type: none;
+  padding: 0; 
+  :hover{
+    background-color: #ffffff;
+  }
+}
+
+.content-list-element{
+  margin-top: 5px;
+  font-size: 20px;
+  text-transform:initial;
+}
+
+.menu-link{
+  text-decoration: none;
+  color: inherit;
+}
+
 #info-column{
   overflow-y: auto; /* Agrega desplazamiento vertical solo cuando el contenido excede la altura */
   max-height: 87vh;

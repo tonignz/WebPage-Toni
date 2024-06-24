@@ -19,19 +19,19 @@
 			</header>
 
 			<nav>
-				<ul>
-					<li><a href="#AboutMe">About Me</a></li>
-					<li><a href="#Experience">Experience</a></li>
-					<li><a href="#Studies">Studies</a></li>
-					<li><a href="#Courses">Courses</a></li>
-					<li><a href="#Skills">Skills</a></li>
+				<ul id="content-list">
+					<li class="content-list-element"><a href="#" onclick="showContent('AboutMe')" class="menu-link">About Me</a></li>
+					<li class="content-list-element"><a href="#" onclick="showContent('Experience')" class="menu-link">Experience</a></li>
+					<li class="content-list-element"><a href="#" onclick="showContent('Studies')" class="menu-link">Studies</a></li>
+					<li class="content-list-element"><a href="#" onclick="showContent('Courses')" class="menu-link">Courses</a></li>
+					<li class="content-list-element"><a href="#" onclick="showContent('Skills')" class="menu-link">Skills</a></li>
 				</ul>
 			</nav>
 		</div>
 
 		<div id="info-column">
 
-			<div id=AboutMe>
+			<div id=AboutMe class=content>
 
 				<h2>About Me</h2>
 
@@ -75,7 +75,7 @@
 
 			</div>
 
-			<div id=Experience>
+			<div id=Experience class=content>
 
 				<h2>Experience</h2>
 				<p>Welcome to my professional journey, where I've had the privilege of applying my skills and expertise in various roles within the field of electronic engineering and automation. Take a closer look at my experiences, ranging from software development and quality assurance to project leadership and technical innovation.</p>
@@ -158,7 +158,7 @@
 					skills but also instilled in me a strong sense of professionalism and attention to detail.</p>
 			</div>
 
-			<div id=Studies>
+			<div id=Studies class=content>
 
 				<h2>Studies</h2>
 
@@ -191,7 +191,7 @@
 					supporting fishing vessels with traps</a>
 			</div>
 
-			<div id=Courses>
+			<div id=Courses class=content>
 
 				<h2>Courses</h2>
 				<p>Dive into a comprehensive overview of the courses I've undertaken, covering a wide range of topics from data science and machine learning to web design and electronic engineering. Explore the skills and knowledge acquired through these learning experiences, each contributing to my professional development and expertise.</p>
@@ -460,7 +460,7 @@
 
 			</div>
 
-			<div id=Skills>
+			<div id=Skills class=content>
 				<h2>Skills</h2>
 
 				<h3>Programming Skills</h3>
@@ -578,6 +578,7 @@
 
 	</div>
 
+	<script src="script.js"></script>
 </body>
 
 </html>
