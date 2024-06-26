@@ -46,3 +46,30 @@ footer {
     text-align: center;
     background-color: #363dffa4;
 }
+
+.dropdown:hover{
+  color: #363dff;
+}
+.sub{
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.paragraph.visible {
+  max-height: 200px; /* Ajusta este valor según el contenido del párrafo */
+}
+
+
+.dropdown-image {
+  transition: transform 0.5s ease-out;
+}
+
+.dropdown-image.rotated {
+  transform: rotate(90deg);
+}

@@ -20,6 +20,27 @@ function showContent(contentId,clickedElement) {
 
 }
 
+//Hacer aparecer el parrafo cuando se clicka encima
+document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        var par = this.nextElementSibling;
+        if (par.style.maxHeight) {
+            par.style.maxHeight = null;
+        } else {
+            par.style.maxHeight = par.scrollHeight + "px";
+        }
+    });
+});
+
+
+document.querySelector('.dropdown').addEventListener('click', function() {
+    document.querySelector('.dropdown-image').classList.toggle('rotated');
+});
+
+
+
+
+
 // Ejecutar cuando la página se haya cargado completamente
 window.onload = function() {
     // Seleccionar el primer enlace del menú por defecto
