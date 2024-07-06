@@ -50,7 +50,7 @@ footer {
 .dropdown:hover{
   color: #363dff;
 }
-.sub{
+.subtitle{
   display: flex;
   align-items: center;
 }
@@ -72,4 +72,9 @@ footer {
 
 .dropdown-image.rotated {
   transform: rotate(90deg);
+}
+
+.course{
+  display: flex;
+  align-items: center;
 }

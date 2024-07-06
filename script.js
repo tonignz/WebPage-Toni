@@ -32,10 +32,17 @@ document.querySelectorAll('.dropdown').forEach(function(dropdown) {
     });
 });
 
-
-document.querySelector('.dropdown').addEventListener('click', function() {
-    document.querySelector('.dropdown-image').classList.toggle('rotated');
+document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        this.querySelector('.dropdown-image').classList.toggle('rotated')
+    });
 });
+
+
+
+//document.querySelector('.dropdown').addEventListener('click', function() {
+//    document.querySelector('.dropdown-image').classList.toggle('rotated');
+//});
 
 
 
