@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   text-align: justify;
-  background-color: #dadbff;
+  background-color: #D3D3D3;
 }
 
 .general-information{
@@ -9,14 +9,15 @@ body {
 }
 
 #menu-column{
-  background-color: #dadbff;
+  background-color: #333333;
+  color: #FFFFF0;
 }
 
 #content-list{
   list-style-type: none;
   padding: 0; 
   :hover{
-    background-color: #ffffff;
+    background-color: #0047AB;
   }
 }
 
@@ -33,22 +34,29 @@ body {
 
 #info-column{
   overflow-y: auto; /* Agrega desplazamiento vertical solo cuando el contenido excede la altura */
-  max-height: 87vh;
-  background-color: #ffffff
+  height: 87vh;
+  background-color: #FFFFF0;
+  color: #333333;
 }
 
 h2{
   border-bottom: 1px solid;
-  border-color:#363dff;
+  /*border-color:#363dff;*/
+  color: #0047AB;
 }
 
 footer {
-    text-align: center;
-    background-color: #363dffa4;
+  display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #D3D3D3;
+    flex-direction: column;
+    color: #333333;
+    font-size: 12px;
 }
 
 .dropdown:hover{
-  color: #363dff;
+  color: #0047AB;
 }
 .subtitle{
   display: flex;
