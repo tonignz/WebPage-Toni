@@ -13,10 +13,12 @@ function showContent(contentId,clickedElement) {
     var links = document.querySelectorAll(".menu-link");
     links.forEach(function(link) {
         link.style.fontWeight = "normal";
+        link.style.fontSize = "20px";
     });
     
     // Poner el peso de la fuente del enlace clicado a "bold"
     clickedElement.style.fontWeight = "bold";
+    clickedElement.style.fontSize = "22px";
 
 }
 
