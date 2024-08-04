@@ -97,7 +97,7 @@ main h1 {
 }
 main h2{
     display: inline-block;
-    font-size: 1.5em; /* Subtítulos */
+    font-size: 1.5em; 
     font-family: 'Merriweather', serif;
     padding-bottom: 7px;
     border-bottom: 5px solid #cac9c9;
@@ -107,6 +107,14 @@ main h2{
 main h3, main h4{
     text-align: justify;
     font-family: 'Merriweather', serif;
+}
+main div table{
+    display: flex;
+    justify-content: center;
+}
+main td{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
