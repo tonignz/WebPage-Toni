@@ -111,10 +111,21 @@ main h3, main h4{
 main div table{
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 main td{
     padding-left: 20px;
     padding-right: 20px;
+}
+#table-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+#table-content{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #f4f4f477;
 }
 
 
