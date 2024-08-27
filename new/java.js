@@ -45,8 +45,6 @@ function showContent(contentId, clickedElement) {
     const containerwindow = window.innerHeight;
     const containermain = document.querySelector('main');
     const containerfooter = document.querySelector('footer');
-    const paragraph = document.getElementsByClassName('.content');
-    const paragraphHeight = paragraph.clientHeight;
 
     containermain.style.paddingBottom = `0px`;
     if ((containermain.clientHeight + containerfooter.clientHeight) <= containerwindow) {
