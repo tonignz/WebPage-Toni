@@ -26,4 +26,5 @@ This is my personal project and external contributions are currently not accepte
 
 ## Contact
 
-If you wish to get in touch with Toni Gonzalez Cifuentes, you can do so through [his personal website](https://www.tonigonzalezcifuentes.com) or by sending an email to [toni@example.com](mailto:toni@example.com).
+If you wish to get in touch with Toni Gonzalez Cifuentes, you can do so through [his personal website](https://www.tonigonzalezcifuentes.com) or by sending an email to [toni@example.com](mailto:toni@example.com)
+
