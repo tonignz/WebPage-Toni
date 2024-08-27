@@ -113,8 +113,8 @@ main div table{
     justify-content: center;
     padding-bottom: 30px;
 }
-main tr img{
-    border-radius: 15px;
+#AboutMe tr img{
+    border-radius: 10px;
     box-shadow: 7px -7px 2px 0 #f4f4f411;
 }
 main td{
@@ -131,6 +131,15 @@ main td{
     font-style: italic;
     color: #f4f4f477;
 }
+main .paragraph {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+main .dropdown:hover{
+    color: #09b18a;
+    transition: color 0.3s ease; /* Transición suave */
+}
 
 
 
@@ -141,7 +150,6 @@ footer {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #0f1126;
     color: #FFFFFF;
     flex-direction: column;
     position: sticky; /* Fija el footer en la parte inferior de la ventana */
@@ -149,6 +157,9 @@ footer {
     width: 100%;
     z-index: 1000; /* Asegura que el footer esté encima del contenido */
     font-family: 'Lato', sans-serif;
+    background: linear-gradient(to top, #0f1126 95%, rgba(255, 0, 0, 0));
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
 footer p {
     font-size: 12px; /* Texto de tamaño pequeño para el footer */
@@ -159,4 +170,8 @@ footer td{
 }
 footer img{
     opacity: 0.7;
+}
+footer.no-transparency{
+    background: linear-gradient(to top, #0f1126 100%, rgba(255, 0, 0, 0));
+    padding-top: 8px;
 }
