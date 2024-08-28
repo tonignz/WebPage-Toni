@@ -1,8 +1,6 @@
 function showContent(contentId, clickedElement) {
 
     const lastposition = window.scrollY || document.documentElement.scrollTop;
-    const footerHeight = 100;
-    const desiredScrollPosition = 300; // Posición a la que quieres desplazar
 
     // Obtener el evento actual
     var event = event || window.event;
@@ -93,6 +91,12 @@ document.querySelectorAll('.dropdown').forEach(function(dropdown) {
     });
 });
 
+document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        this.querySelector('.dropdown-image').classList.toggle('rotated')
+    });
+});
+
 
 
 
@@ -128,3 +132,4 @@ window.onload = function() {
         behavior: 'auto'  // Desplazamiento suave
     });
 };
+

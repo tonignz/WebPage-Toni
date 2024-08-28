@@ -135,10 +135,21 @@ main .paragraph {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
-  }
+}
+main .dropdown{
+    display: flex;
+    align-items: center;
+}
 main .dropdown:hover{
     color: #09b18a;
     transition: color 0.3s ease; /* Transición suave */
+}
+main .dropdown-image {
+    transition: transform 0.5s ease-out;
+}
+
+main .dropdown-image.rotated {
+    transform: rotate(90deg);
 }
 
 
@@ -175,3 +186,4 @@ footer.no-transparency{
     background: linear-gradient(to top, #0f1126 100%, rgba(255, 0, 0, 0));
     padding-top: 8px;
 }
+
