@@ -1,8 +1,6 @@
 function showContent(contentId, clickedElement) {
 
     const lastposition = window.scrollY || document.documentElement.scrollTop;
-    const footerHeight = 100;
-    const desiredScrollPosition = 300; // Posición a la que quieres desplazar
 
     // Obtener el evento actual
     var event = event || window.event;
@@ -70,10 +68,6 @@ function showContent(contentId, clickedElement) {
             behavior: 'smooth' // Desplazamiento suave
         });
     }
-
-    const lastposition2 = window.scrollY || document.documentElement.scrollTop;
-    
-
 }
 
 
@@ -82,14 +76,22 @@ function showContent(contentId, clickedElement) {
 
 
 //Hacer aparecer el parrafo cuando se clicka encima
-document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-    dropdown.addEventListener('click', function() {
-        var par = this.nextElementSibling;
+document.querySelectorAll('.dropdown .subtitle').forEach(function(subtitle) {
+    subtitle.addEventListener('click', function() {
+        // Buscar el siguiente elemento hermano del contenedor padre (.dropdown)
+        var par = this.closest('.dropdown').nextElementSibling;
         if (par.style.maxHeight) {
             par.style.maxHeight = null;
         } else {
             par.style.maxHeight = par.scrollHeight + "px";
         }
+    });
+
+});
+
+document.querySelectorAll('.subtitle').forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        this.querySelector('.dropdown-image').classList.toggle('rotated')
     });
 });
 
@@ -128,3 +130,4 @@ window.onload = function() {
         behavior: 'auto'  // Desplazamiento suave
     });
 };
+
